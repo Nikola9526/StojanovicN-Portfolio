@@ -1,0 +1,84 @@
+body {
+    margin: 2em;
+    /*background-color: gray;*/
+    background-image: image("../img/erd-model-med.jpeg");
+    
+}
+main {
+    background-color: white;
+    margin: 2em;
+    border: solid black;
+    margin: 2em;
+
+}
+main div {
+    margin: 1.5em;
+}
+
+
+
+header{
+    background-color: white; 
+    font-family: fantasy;
+}
+header h1 {
+    margin: 2em;
+    font-size: 130%;
+    text-align: center;
+}
+/*nav {
+    text-align: center;
+    margin: 2em;   
+    color: green;
+    font-weight: bold;
+    font-size: 120%;
+}*/
+nav a:hover {
+    color:blue;
+ }
+
+
+
+
+
+
+#navAside {
+    float: left;
+    margin: 5px 2px 5px;
+   
+
+}
+
+
+ #NSAside {
+    float: left;
+    width: 150 px;
+    margin: 5px 2px 5px;
+    color:black;
+    font-weight: bold;
+
+ }
+
+ footer  {
+    font-size: 80%;
+    text-align: right;
+    color: white;
+    
+    margin-bottom: 0.5em;
+}
+footer a:link {
+    color: white;
+}
+footer a:hover {
+    color: yellow;
+}
+
+
+
+
+
+
+
+
+   
+
