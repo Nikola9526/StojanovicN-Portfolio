@@ -3,85 +3,28 @@
 
 <head>
     <title>NS Portfolio - Projects</title>
-    <link rel="Pagestylesheet" href="./pageStyles.css">
+    <link rel="stylesheet" href="./OutlineStyles.css">
     <style>
-        body {
-                margin: 2em;
-                
-               
-                background-color: gray;
-            }
-            main {
-                background-color: white;
-                margin: 2em;
-
-            }
-            header{
-                background-color: white;
-                margin: 2em;
-                
-            }
-            header h1 {
-                margin: 2em;
-                font-size: 130%;
-                text-align: center;
-
-            
-            }
-            body h4 {
-                font-size: 80%;
-                text-align: left;
-                color: white;
-                
-            }
-            nav {
-                text-align: center;
-                margin: 2em;   
-                color: green;
-                font-weight: bold;
-                font-size: 120%;
-            }
-           
-            main div {
-                text-align: center;
-            }
-
-
-            footer  {
-                font-size: 80%;
-                text-align: right;
-                color: white;
-                margin-bottom: 0.5em;
-            }
-            footer a:link {
-                color: white;
-            }
-            footer a:hover {
-                color: yellow;
-            }
-             aside {
-                float: left;
-                
-                width: 150 px;
-                margin: 2px 0.5px 2px;
-
-             }
-
-
-
-
-
+        #DBPic {
+            border: solid black;
+        }
+        #PSPic {
+            border: solid black;
+        }
+        main div h2 {
+            text-align: center;
+        }
+        
 
     </style>
 </head>
     <body>
         <header> 
-            <!-- <h4 style="text-align: left;">NS</h4> -->
-            <!---->
-            <h1 style="text-align: center;">Nikola's Portfolio</h1>
+            <aside>NS</aside>
+            <h1>Nikola's Portfolio</h1>
         </header>
         <!-- menu -->
-        <nav style="text-align: center;">
+        <nav>
             <h3>
                 <a href="./index.html">Home</a>
                 <a href="./projects.html">Projects</a>
@@ -95,27 +38,44 @@
             <div>
                 <h2>My Projects</h2>
                 <h3>Database Design & Programing - Data Modeling</h3>
+                <button id="DB" onclick="showMore()">More</button>
+                <img id="DBPic" src="" alt="">
+                
                 <div>
                     <p>This project was about understanding the given business scenario for Humber College 
-                        and model Entities and relationships using Entity Relationship Diagram. </p>
-                    <img src="./img/erd-model-med.jpeg" alt="Fig.1 Entity Relationship Diagram">
+                        and model Entities and relationships using Entity Relationship Diagram.</p>
+                    
                 </div>
-                
-                <h3>Algorithms and Problem Solving - Object Oriented Programing</h3>
                 <div>
+                    <h3>Algorithms and Problem Solving - Object Oriented Programing</h3>
+                    <button id="PS" onclick="showMore2()">More/Less</button>
+                    <img id="PSPic" src="" alt="">
+                    
+                
                     <p>In this project I used my knowledge in object orinted programing to build a program that implements grocery class.
                     </p>
-                    <img src="./img/java-grocery.jpeg" alt="Fig.2 My java grocery class.">
+                    <!--<img src="./img/java-grocery.jpeg" alt="Fig.2 My java grocery class.">-->
                 </div>
             </div>
         </main>
-        <!-- make some room  -->
         <br><br><br>
         <footer>
             <!-- contact information is in the footer -->
             <h9>Nikola Stojanovic</h9>&#32;&#124;&#32;
             <a href="mailto:stojnik95@gmail.com">stojnik95@gmail.com</a>&#32;&#124;&#32;
             <a href="tel: 647-774-4618"> 647-774-4618</a>
-        </footer>   
+        </footer>  
+        <script>
+           
+            var showMore = function() {
+                document.getElementById("DBPic").src= "./img/erd-model-med.jpeg"
+                document.getElementById("DBPic").alt= "LogicalModel"
+
+
+                
+
+                
+            }
+        </script> 
     </body>
 </html>
