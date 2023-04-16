@@ -13,7 +13,7 @@
                 background-color: white;
                 margin-left: 10%;
                 margin-right: 10%;
-                height: 710px;
+                height: 730px;
                 
             }
             .title {
@@ -42,6 +42,7 @@
             img {
                 border: solid black;
                 margin-bottom: 1em;
+
             }
 
             td {
@@ -59,6 +60,11 @@
                 text-align: start;
                 border-radius: 5px;
                 box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+                margin-left: 1em;
+            }
+            .paraSubject {
+                font-family: fantasy;
+                font-size: 80%;
             }
         </style>
     </head>
@@ -86,18 +92,18 @@
                 <div class="option">
                     <table>
                         <tr>
-                            <td>Design & Programing<br><br>
+                            <td>Datebase Design & Programing
                                  <button id="show-moreDP" onclick="showMore(id)">Show</button>
                             </td>
                             
                            
                         </tr>
                         <tr>
-                            <td>Algorithms and Problem Solving<br><br>
+                            <td>Algorithms and Problem Solving
                             <button id="MorePS" onclick="showMore(id)">Show</button></td>
                         </tr>
                         <tr>
-                            <td>Web Design<br><br>
+                            <td>Web Design
                             <button id="MoreWD" onclick="showMore(id)">Show</button></td>
                         </tr>
                     </table>
@@ -106,23 +112,11 @@
                 </div>
                 <!--main content (changes on click) -->
                 <div class="content">
-                    <h4 id="subject">Database Design & Programing - Data Modeling</h4>
-                    
-                    
+                    <h4 id="subject"></h4>
+                    <p class="paraSubject"id="subjectDescrip"></p>
                    
-                   <img id="image" src="" alt=""><br>
-
-                    <!--<p>This project was about understanding the given business scenario for Humber College 
-                        and model Entities and relationships using Entity Relationship Diagram.</p>
-
-                    <h3>Algorithms and Problem Solving - Object Oriented Programing</h3>
-                    <button id="PS" onclick="showMore2()">More/Less</button>
-                    <img id="PSPic" src="" alt="">
-            
-            
-                    <p>In this project I used my knowledge in object orinted programing to build a program that implements grocery class.
-                    </p> 
-                    <img src="./img/java-grocery.jpeg" alt="Fig.2 My java grocery class.">-->
+                    
+                   <img id="image" src="" alt="">
                 </div>
 
             </section>
@@ -141,14 +135,19 @@
 
                 switch(id) {
                     case "show-moreDP":
+                        document.getElementById("subject").innerHTML= "Database Design & Programing - Data Modeling"
+                        document.getElementById("subjectDescrip").innerHTML= "This project was about understanding the given business scenario for Humber College and model Entities and relationships using Entity Relationship Diagram"
                         document.getElementById("image").src= "./img/erd-model-med.jpeg"
                         document.getElementById("image").alt= "LogicalModel"
                         break;
                     case "MorePS":
+                        document.getElementById("subject").innerHTML="Algorithms and Problem Solving"
+                        document.getElementById("subjectDescrip").innerHTML= "In this project I used my knowledge in object orinted programing to build a program that implements grocery class."
                         document.getElementById("image").src= "./img/java-grocery.jpeg"
                         document.getElementById("image").alt= "Fig.2 My java grocery class."
                         break;
                     default:
+                        document.getElementById("subject").innerHTML="WebDesign"
                         document.getElementById("image").src= "./img/java-grocery.jpeg"
                         document.getElementById("image").alt= "Fig.2 My java grocery class."
 
@@ -158,10 +157,6 @@
                 document.getElementById("image").alt= "LogicalModel"*/
             }
 
-            var open = function() {
-                document.getElementById("image").src= "./img/erd-model-med.jpeg"
-                document.getElementById("image").alt= "LogicalModel"
-            }
         </script> 
     </body>
 </html>
