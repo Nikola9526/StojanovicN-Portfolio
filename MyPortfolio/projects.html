@@ -1,81 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>NS Portfolio - Projects</title>
-    <link rel="stylesheet" href="./OutlineStyles.css">
-    <style>
-        #DBPic {
-            border: solid black;
-        }
-        #PSPic {
-            border: solid black;
-        }
-        main div h2 {
-            text-align: center;
-        }
-        
-
-    </style>
-</head>
+    <head>
+        <title>NS Portfolio - Projects</title>
+        <link rel="stylesheet" href="./css/OutlineStyles.css">
+        <style>
+            body {
+                background-image:linear-gradient();
+                background-size: cover;
+            }
+            #DBPic {
+                border: solid black;
+            }
+            #PSPic {
+                border: solid black;
+            }
+            main div h1 {
+                text-align: center;
+            }
+            td {
+                padding-top: 2em;
+                padding-bottom: 2em;
+            }
+            button {
+                border-radius: 3px;
+                border: 0;
+                line-height: 2;
+                padding: 0 10px;
+                font-size: 1rem;
+                font-family: fantasy;
+                text-align: start;
+                border-radius: 5px;
+                box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+            }
+        </style>
+    </head>
     <body>
-    <!-- Menu -->    
-    <aside id="right-aside">   
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="./projects.html">Projects</a>
-            <a href="./resume.html">Resume</a> 
-            <a href="./contact.html">Contact</a>
-            <a href="./about.html">About</a> 
-        </nav>        
-    </aside>
-    <header> 
-        <h1>Nikola's Portfolio</h1>
-    </header>   
-        
-    <!-- page content -->
-    <main>
-        <div>
-            <h2>My Projects</h2>
-            <h3>Database Design & Programing - Data Modeling</h3>
-            <button id="DB" onclick="showMore()">More</button>
-            <img id="DBPic" src="" alt="">
+        <!-- menu -->
+        <aside id="right-aside">   
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./resume.html">Resume</a> 
+                <a href="./contact.html">Contact</a>
+                <a href="./about.html">About</a> 
+            </nav>        
+        </aside>
+        <header> 
+            <h1>Nikola's Portfolio</h1>
+        </header>   
+
+        <!-- page content -->
+        <main>
+            <div class="title">
+                <h2>My Projects</h2>
+            </div>
             
-            <div>
+            <table class="options">
+                <tr>
+                    <td><button type="menu" >Design & Programing</button></td>
+                </tr>
+                <tr>
+                    <td>Algorithms and Problem Solving </td>
+                </tr>
+                <tr>
+                    <td>Web Design</td>
+                </tr>
+            </table>
+           
+            <div class="content">
+                <h3>Database Design & Programing - Data Modeling</h3>
+                <button id="DB" onclick="showMore()">More</button>
+                <img id="DBPic" src="" alt="">
+
                 <p>This project was about understanding the given business scenario for Humber College 
                     and model Entities and relationships using Entity Relationship Diagram.</p>
-                
-            </div>
-            <div>
+
                 <h3>Algorithms and Problem Solving - Object Oriented Programing</h3>
                 <button id="PS" onclick="showMore2()">More/Less</button>
                 <img id="PSPic" src="" alt="">
-                
-            
+        
+        
                 <p>In this project I used my knowledge in object orinted programing to build a program that implements grocery class.
                 </p>
-                <!--<img src="./img/java-grocery.jpeg" alt="Fig.2 My java grocery class.">-->
+            <div>
+        
+            <!--<img src="./img/java-grocery.jpeg" alt="Fig.2 My java grocery class.">-->
             </div>
-        </div>
-    </main>
-        <br><br><br>
+            </div>
+        </main>
+
         <footer>
-            <!-- contact information is in the footer -->
-            <h9>Nikola Stojanovic</h9>&#32;&#124;&#32;
-            <a href="mailto:stojnik95@gmail.com">stojnik95@gmail.com</a>&#32;&#124;&#32;
-            <a href="tel: 647-774-4618"> 647-774-4618</a>
+        <!-- contact information is in the footer -->
+        <h9>Nikola Stojanovic</h9>&#32;&#124;&#32;
+        <a href="mailto:stojnik95@gmail.com">stojnik95@gmail.com</td>&#32;&#124;&#32;
+        <a href="tel: 647-774-4618"> 647-774-4618</td>
         </footer>  
         <script>
-           
-            var showMore = function() {
-                document.getElementById("DBPic").src= "./img/erd-model-med.jpeg"
-                document.getElementById("DBPic").alt= "LogicalModel"
+
+        var showMore = function() {
+        document.getElementById("DBPic").src= "./img/erd-model-med.jpeg"
+        document.getElementById("DBPic").alt= "LogicalModel"
 
 
-                
 
-                
-            }
-        </script> 
+
+        
+    }
+    </script> 
     </body>
 </html>

@@ -2,45 +2,94 @@
 <html lang="en">
     <head>
         <title>NS Portfolio - Resume</title>
-        <link rel="stylesheet" href="./OutlineStyles.css">
+        <link rel="stylesheet" href="./css/OutlineStyles.css">
+        <style>
+            body {
+                background-image: url(./img/my-desk.jpeg);
+                background-size: cover;
+                
+            }
+            section {
+                background-color: white;
+                margin-left: 10%;
+                margin-right: 10%;
+                font-size: small;
+            }
+            .title {
+                text-align: center;
+                padding:  0.5em;
+                border-bottom: gray solid;
+                font-size: larger;
+            }
+
+            .left-side {
+                float: left;
+                width: 35%;
+                padding-left: 1em;
+            }
+            .right-side{
+                margin-left: 40%;
+            }
+        </style>
     </head>
     <body>
-
-        <aside id="NSAside">NS</aside>
         <!-- menu -->
-        <aside id="navAside">       
-            <a href="./index.html">Home</a>
-            <a href="./projects.html">Projects</a>
-            <a href="./resume.html">Resume</a> 
-            <a href="./contact.html">Contact</a>
-            <a href="./about.html">About</a> 
+        <aside id="right-aside">   
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./resume.html">Resume</a> 
+                <a href="./contact.html">Contact</a>
+                <a href="./about.html">About</a> 
+            </nav>        
         </aside>
         <header> 
-
-
-            
             <h1>Nikola's Portfolio</h1>
-        </header>
-        
+        </header>   
 
         <main>
-            </div>
-                <!--Section 1  -->
+            <section>
+            <div class="title">
+            <!-- heading  -->
                 <h1>Nikola Stojanovic</h1>
+            </div>
+            <div class="left-side">
                 <h2>Profile</h2>
-                    <blockquote>This is a section where I talk about myself and my objectives...</blockquote>
+                <p>This is a section where I talk about myself and my objectives...</p>
+                <h2>Skills</h2>
+                <p>
+                    <dt>
+                        <li>Equaly effective at working independently or as part of a team</li>
+                        <li>Ability to prioritize tasks effectively</li>
+                        <li>Excellent oral and written skills</li>
+                        <li>Very proficient in Arc Map, Arc GIS Pro, Arc GIS online, Auto CAD, Adobe</li>
+                        <li>Programming languages: Python, Java</li>
+                        <li>Profficient in Microsoft Office</li>
+                        <li>Proficient with Point of Sale terminals</li>
+                    </dt>
+                </p>
+                <h2>Achivements</h2>
+                    <dt>
+                        <li>Smart Serve Certified</li>
+                        <li>Ontario Ministry of Labour,<br>Health and Safety Awareness Certificate (2014) </li>
+                    </dt>
+                <p>
+
+                </p>
+            </div>
+            <div class="right-side">
                 <!-- Section 2 -->
                 <h2>Work Expirience</h2>
-                    <blockquote>
-                        <dt><h3>Amazon Canada, Bolton ON - Fulfillment Associate<br>
-                            <small><i>02/2021 - Present</i></small></h4>
+                <p>
+                        <dt><h3>Amazon Canada, Bolton ON<br>Fulfillment Associate<br>
+                            <small><i>02/2021 - Present</i></small></h3>
                         </dt>
                             <ul>
                                 <li>Working full time in the shipping dock of the Amazon Fulfillment Center</li>
                                 <li>Working in a team in a very fast-paced environment</li>
                                 <li>Recognized as Employee of the month on few occasions</li>
                             </ul>
-                        <dt><h3>Distillary Corporation, Cluny Bistro & Boulangerie, Toronto ON - Cafe Attendant<br>
+                        <dt><h3>Distillary Corporation, Cluny Bistro & Boulangerie, Toronto ON<br>Cafe Attendant<br>
                             <small><i>09/2014 - 12/2022</i></small></h3>
                         </dt>
                             <ul>
@@ -51,38 +100,21 @@
                                 <li>Stocked up food and materials and handled cash</li>
                                 <li>Recoginzied as an employee of the year in 2017</li>
                             </ul>
-                    </blockquote>
+                </p>
                 <!-- Section 3 -->
                 <h2>Education</h2>
-                    <blockquote>
-                        <h3>Humber College, Toronto ON - Computer Programing<br>
-                        <small><i>01/2023 - Present</i></small></h3>
-                        <h3>Fanshawe College, London ON - Urban Design & GIS<br>
-                        <small><i>09/2014 - 06/2016</i></small></h3>
-                        <h3>Thornlea High School, Thornhill ON<br>
-                            <small><i>Graduated 2014</i></small></h3>
-                    </blockquote>
-                <!-- Section 4 -->
-                <h2>Skills and Acheivements</h2>
-                <blockquote>
-                    <dt>
-                        <li>Equaly effective at working independently or as part of a team</li>
-                        <li>Ability to prioritize tasks effectively</li>
-                        <li>Excellent oral and written skills</li>
-                        <li>Very proficient in Arc Map, Arc GIS Pro, Arc GIS online, Auto CAD, Adobe</li>
-                        <li>Programming languages: Python, Java</li>
-                        <li>Profficient in Microsoft Office</li>
-                        <li>Proficient with Point of Sale terminals</li>
-                        <li>Smart Serve Certified</li>
-                        <li>Ontario Ministry of Labour, Health and Safety Awareness Certificate (2014) </li>
-                        <li>Health and Safety Awareness Certificate (2014)</li>
-                    </dt>
-                </blockquote> 
-                </blockquote> 
+                <p>
+                    <h4>Humber College, Toronto ON - Computer Programing<br>
+                    <i>01/2023 - Present</i></h4>
+                    <h4>Fanshawe College, London ON - Urban Design & GIS<br>
+                    <i>09/2014 - 06/2016</i></h4>
+                    <h4>Thornlea High School, Thornhill ON<br>
+                    <i>Graduated 2014</i></h4>
+                </p>
             </div>
-        </main>
-        <!-- make some room  -->
-        <br><br><br>
+                
+            </div>
+        </section>
         <footer>
             <!-- contact information is in the footer -->
             <h9>Nikola Stojanovic</h9>&#32;&#124;&#32;
