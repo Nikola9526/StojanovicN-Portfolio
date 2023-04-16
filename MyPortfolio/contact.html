@@ -129,37 +129,40 @@
         </header> 
 
         <main>
-             <div>
+            <div>
                 <h1>Contact Me</h1>
                 <p>Hello there, if you would like to reach out to me or ask any questions, please leave your 
                     information in the form provided below:
                 </p>
 
-                <table>
-                    <tr>
-                        <td><label>First Name: </label></td>
-                        <td><input type="text" id="fname" name="fname" size="33"></td>
-                        <td><span id="fname_error">*</span></td>
-                    </tr>
-                    <tr>
-                        <td><label>Last Name: </label></td>
-                        <td><input type="text" name="lname" id="lname" size="33"></td> 
-                        <td><span id="lname_error">*</span></td>
-                    </tr>
-                    <tr>
-                        <td><label> Email: </label></td>
-                        <td><input type="text" id="email" name="email" size="33"></td> 
-                        <td><span id="email_name_error">*</span></td> 
-                    </tr>
-                    <tr>
-                        <td><label>Comments:</label></td>
-                        <td> <textarea cols="25"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td><button onclick="submit()">Submit</button></td>
-                        <td><button>Reset</button></td>
-                    </tr>
-                </table>
+                <form action="infolocal.html">
+                    <table>
+                        <tr>
+                            <td><label>First Name: </label></td>
+                            <td><input type="text" id="fname" name="fname" size="33"></td>
+                            <td><span id="fname_error">*</span></td>
+                        </tr>
+                        <tr>
+                            <td><label>Last Name: </label></td>
+                            <td><input type="text" name="lname" id="lname" size="33"></td> 
+                            <td><span id="lname_error">*</span></td>
+                        </tr>
+                        <tr>
+                            <td><label> Email: </label></td>
+                            <td><input type="text" id="email" name="email" size="33"  ></td> 
+                            <td><span id="email_name_error">*</span></td> 
+                        </tr>
+                        <tr>
+                            <td><label>Comments:</label></td>
+                            <td> <textarea cols="25"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="submit()">Submit</button></td>
+                            <td><button value="reset"onclick="reset()">Reset</button></td>
+                        </tr>
+                    </table>
+                </form>
+            
             </div>
         </main>
        
@@ -170,6 +173,63 @@
             <a href="tel: 647-774-4618"> 647-774-4618</a>
         </footer>   
         <script>
+
+            var $ = function(id) {
+                return document.getElementById(id);
+            }
+
+            var submit = function() {
+                var firstName = $("fname").value;
+                var lastName = $("lname").value;
+                var email= $("email").value;
+
+
+                localStorage.setItem("fname", firstName);
+                localStorage.setItem("lname",lastName);
+
+                // check first name
+
+                if(firstName == "") {
+                    document.getElementById("fname_error").innerHTML="This Field is Required!";
+                } else {
+                    document.getElementById("fname_error").innerHTML="*";
+                }
+
+                // check last name
+
+                if(lastName == "") {
+                    $("lname_error").innerHTML="This Field is Required!"
+                } else {
+                    $("lname_error").innerHTML="*"
+                }
+
+                //check email 
+
+                if(email == "") {
+                    $("email_name_error").innerHTML="This Field is Required!"
+                } else if (email != "@" || email != ".com" || email != ".ca" ) {
+                    $("email_name_error").innerHTML="Has to be email format! xxxxxxx@gmail.com"
+                } else {
+                    $("email_name_error").innerHTML="*"
+                }
+
+               
+
+
+            }
+
+            var reset = function() {
+                var firstName = $("fname").value;
+                var lastName = $("lname").value;
+                var email= $("email").value;
+
+                if (firstName != "") {
+                    $("fname").innerHTML=""
+                }
+
+            }
+
+
 
         </script>
     </body>
