@@ -13,24 +13,35 @@
                 background-color: white;
                 margin-left: 10%;
                 margin-right: 10%;
+                height: 710px;
+                
             }
             .title {
                 text-align: center;
                 padding:  0.5em;
                 border-bottom: gray solid;
             }
+            
             .option {
-                float: left;
+               
                 width: 50px;
+                
+                float: left;
+                width: 35%;
                 padding-left: 1em;
+                
             }
+            
             .content{
-                padding-left: 1em;
+                margin-left: 40%;
+                /*padding-left: 1em;
                 border-left: gray solid;
+                margin-left: 40%;*/
             }
 
             img {
                 border: solid black;
+                margin-bottom: 1em;
             }
 
             td {
@@ -72,24 +83,34 @@
                 <div class="title">
                     <h1>My Projects</h1>
                 </div>
-                <div class="options">
+                <div class="option">
                     <table>
                         <tr>
-                            <td>Design & Programing</td>
+                            <td>Design & Programing<br><br>
+                                 <button id="show-moreDP" onclick="showMore(id)">Show</button>
+                            </td>
+                            
+                           
                         </tr>
                         <tr>
-                            <td>Algorithms and Problem Solving </td>
+                            <td>Algorithms and Problem Solving<br><br>
+                            <button id="MorePS" onclick="showMore(id)">Show</button></td>
                         </tr>
                         <tr>
-                            <td>Web Design</td>
+                            <td>Web Design<br><br>
+                            <button id="MoreWD" onclick="showMore(id)">Show</button></td>
                         </tr>
                     </table>
+                    
+                    
                 </div>
-                <!-- main content (changes on click) -->
+                <!--main content (changes on click) -->
                 <div class="content">
                     <h4 id="subject">Database Design & Programing - Data Modeling</h4>
-                    <button id="show-more" onclick="showMore()">Show</button>
-                    <img id="image" src="" alt="">
+                    
+                    
+                   
+                   <img id="image" src="" alt=""><br>
 
                     <!--<p>This project was about understanding the given business scenario for Humber College 
                         and model Entities and relationships using Entity Relationship Diagram.</p>
@@ -116,9 +137,30 @@
         
         <script>
 
-            var showMore = function() {
-                document.getElementById("show-more").src= "./img/erd-model-med.jpeg"
-                document.getElementById("show-more").alt= "LogicalModel"
+            var showMore = function(id) {
+
+                switch(id) {
+                    case "show-moreDP":
+                        document.getElementById("image").src= "./img/erd-model-med.jpeg"
+                        document.getElementById("image").alt= "LogicalModel"
+                        break;
+                    case "MorePS":
+                        document.getElementById("image").src= "./img/java-grocery.jpeg"
+                        document.getElementById("image").alt= "Fig.2 My java grocery class."
+                        break;
+                    default:
+                        document.getElementById("image").src= "./img/java-grocery.jpeg"
+                        document.getElementById("image").alt= "Fig.2 My java grocery class."
+
+
+                }
+                /*document.getElementById("image").src= "./img/erd-model-med.jpeg"
+                document.getElementById("image").alt= "LogicalModel"*/
+            }
+
+            var open = function() {
+                document.getElementById("image").src= "./img/erd-model-med.jpeg"
+                document.getElementById("image").alt= "LogicalModel"
             }
         </script> 
     </body>
