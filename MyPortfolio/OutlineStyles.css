@@ -1,76 +1,43 @@
 body {
-    margin: 2em;
-    /*background-color: gray;*/
-    background-image: image("../img/erd-model-med.jpeg");
-    
+    background-color: rgb(225, 222, 219);
+    font-family:fantasy;  
 }
-main {
-    background-color: white;
-    margin: 2em;
-    border: solid black;
-    margin: 2em;
-
+#home-body {
+    background-image: url(./img/my-desk.jpeg);
+    background-size: cover;
 }
-main div {
-    margin: 1.5em;
-}
-
-
-
 header{
-    background-color: white; 
-    font-family: fantasy;
+    background-color: transparent; 
+    margin: 1em;
 }
-header h1 {
-    margin: 2em;
-    font-size: 130%;
-    text-align: center;
+
+header h1 {  
+    font-size: 150%;
 }
-/*nav {
-    text-align: center;
-    margin: 2em;   
-    color: green;
-    font-weight: bold;
-    font-size: 120%;
-}*/
+
 nav a:hover {
     color:blue;
  }
 
-
-
-
-
-
-#navAside {
-    float: left;
-    margin: 5px 2px 5px;
-   
-
-}
-
-
- #NSAside {
-    float: left;
-    width: 150 px;
-    margin: 5px 2px 5px;
-    color:black;
-    font-weight: bold;
-
+#right-aside {
+    float: right;
  }
 
- footer  {
+ main {
+    background-color: transparent;
+ }
+#home-main {
+    height: 650px;
+}
+footer  {
     font-size: 80%;
-    text-align: right;
-    color: white;
-    
-    margin-bottom: 0.5em;
+    text-align: right;  
 }
 footer a:link {
-    color: white;
+    color: black;
 }
 footer a:hover {
-    color: yellow;
+    color: rgb(81, 0, 255);
 }
 
 
