@@ -19,45 +19,45 @@
     </style>
 </head>
     <body>
-        <header> 
-            <aside>NS</aside>
-            <h1>Nikola's Portfolio</h1>
-        </header>
-        <!-- menu -->
+    <!-- Menu -->    
+    <aside id="right-aside">   
         <nav>
-            <h3>
-                <a href="./index.html">Home</a>
-                <a href="./projects.html">Projects</a>
-                <a href="./resume.html">Resume</a> 
-                <a href="./contact.html">Contact</a>
-                <a href="./about.html">About</a>  
-            </h3>          
-        </nav>
-        <!-- page content -->
-        <main>
+            <a href="./index.html">Home</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./resume.html">Resume</a> 
+            <a href="./contact.html">Contact</a>
+            <a href="./about.html">About</a> 
+        </nav>        
+    </aside>
+    <header> 
+        <h1>Nikola's Portfolio</h1>
+    </header>   
+        
+    <!-- page content -->
+    <main>
+        <div>
+            <h2>My Projects</h2>
+            <h3>Database Design & Programing - Data Modeling</h3>
+            <button id="DB" onclick="showMore()">More</button>
+            <img id="DBPic" src="" alt="">
+            
             <div>
-                <h2>My Projects</h2>
-                <h3>Database Design & Programing - Data Modeling</h3>
-                <button id="DB" onclick="showMore()">More</button>
-                <img id="DBPic" src="" alt="">
+                <p>This project was about understanding the given business scenario for Humber College 
+                    and model Entities and relationships using Entity Relationship Diagram.</p>
                 
-                <div>
-                    <p>This project was about understanding the given business scenario for Humber College 
-                        and model Entities and relationships using Entity Relationship Diagram.</p>
-                    
-                </div>
-                <div>
-                    <h3>Algorithms and Problem Solving - Object Oriented Programing</h3>
-                    <button id="PS" onclick="showMore2()">More/Less</button>
-                    <img id="PSPic" src="" alt="">
-                    
-                
-                    <p>In this project I used my knowledge in object orinted programing to build a program that implements grocery class.
-                    </p>
-                    <!--<img src="./img/java-grocery.jpeg" alt="Fig.2 My java grocery class.">-->
-                </div>
             </div>
-        </main>
+            <div>
+                <h3>Algorithms and Problem Solving - Object Oriented Programing</h3>
+                <button id="PS" onclick="showMore2()">More/Less</button>
+                <img id="PSPic" src="" alt="">
+                
+            
+                <p>In this project I used my knowledge in object orinted programing to build a program that implements grocery class.
+                </p>
+                <!--<img src="./img/java-grocery.jpeg" alt="Fig.2 My java grocery class.">-->
+            </div>
+        </div>
+    </main>
         <br><br><br>
         <footer>
             <!-- contact information is in the footer -->
