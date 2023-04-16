@@ -24,20 +24,7 @@ main {
     font-size: 120%;
     background-color: transparent;
 }
-.title {
-    /*text-align: center;*/
-    border-bottom: gray solid;
-}
-.options {
-    float: left;
-    width: 25%;   
-}
 
-.content{
-    margin-left: 25%;
-    padding-left: 1em;
-    border-left: gray solid;
-}
 /* footer */
 footer  {
     font-size: 80%;
