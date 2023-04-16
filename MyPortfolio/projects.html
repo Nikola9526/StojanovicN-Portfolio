@@ -94,6 +94,9 @@
                         <tr>
                             <td>Datebase Design & Programing
                                  <button id="show-moreDP" onclick="showMore(id)">Show</button>
+                                 <ul class="paraSubject">
+                                    <li>hi</li>
+                                 </ul>
                             </td>
                             
                            
@@ -114,8 +117,6 @@
                 <div class="content">
                     <h4 id="subject"></h4>
                     <p class="paraSubject"id="subjectDescrip"></p>
-                   
-                    
                    <img id="image" src="" alt="">
                 </div>
 
@@ -141,7 +142,7 @@
                         document.getElementById("image").alt= "LogicalModel"
                         break;
                     case "MorePS":
-                        document.getElementById("subject").innerHTML="Algorithms and Problem Solving"
+                        document.getElementById("subject").innerHTML="Algorithms and Problem Solving - Classes & Objects"
                         document.getElementById("subjectDescrip").innerHTML= "In this project I used my knowledge in object orinted programing to build a program that implements grocery class."
                         document.getElementById("image").src= "./img/java-grocery.jpeg"
                         document.getElementById("image").alt= "Fig.2 My java grocery class."
