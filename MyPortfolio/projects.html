@@ -6,22 +6,38 @@
         <link rel="stylesheet" href="./css/OutlineStyles.css">
         <style>
             body {
-                background-image:linear-gradient();
+                background-image: url(./img/my-desk.jpeg);
                 background-size: cover;
             }
-            #DBPic {
-                border: solid black;
+            section {
+                background-color: white;
+                margin-left: 10%;
+                margin-right: 10%;
             }
-            #PSPic {
-                border: solid black;
-            }
-            main div h1 {
+            .title {
                 text-align: center;
+                padding:  0.5em;
+                border-bottom: gray solid;
             }
+            .option {
+                float: left;
+                width: 50px;
+                padding-left: 1em;
+            }
+            .content{
+                padding-left: 1em;
+                border-left: gray solid;
+            }
+
+            img {
+                border: solid black;
+            }
+
             td {
                 padding-top: 2em;
                 padding-bottom: 2em;
             }
+
             button {
                 border-radius: 3px;
                 border: 0;
@@ -52,61 +68,58 @@
 
         <!-- page content -->
         <main>
-            <div class="title">
-                <h2>My Projects</h2>
-            </div>
+            <section>
+                <div class="title">
+                    <h1>My Projects</h1>
+                </div>
+                <div class="options">
+                    <table>
+                        <tr>
+                            <td>Design & Programing</td>
+                        </tr>
+                        <tr>
+                            <td>Algorithms and Problem Solving </td>
+                        </tr>
+                        <tr>
+                            <td>Web Design</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- main content (changes on click) -->
+                <div class="content">
+                    <h4 id="subject">Database Design & Programing - Data Modeling</h4>
+                    <button id="show-more" onclick="showMore()">Show</button>
+                    <img id="image" src="" alt="">
+
+                    <!--<p>This project was about understanding the given business scenario for Humber College 
+                        and model Entities and relationships using Entity Relationship Diagram.</p>
+
+                    <h3>Algorithms and Problem Solving - Object Oriented Programing</h3>
+                    <button id="PS" onclick="showMore2()">More/Less</button>
+                    <img id="PSPic" src="" alt="">
             
-            <table class="options">
-                <tr>
-                    <td><button type="menu" >Design & Programing</button></td>
-                </tr>
-                <tr>
-                    <td>Algorithms and Problem Solving </td>
-                </tr>
-                <tr>
-                    <td>Web Design</td>
-                </tr>
-            </table>
-           
-            <div class="content">
-                <h3>Database Design & Programing - Data Modeling</h3>
-                <button id="DB" onclick="showMore()">More</button>
-                <img id="DBPic" src="" alt="">
+            
+                    <p>In this project I used my knowledge in object orinted programing to build a program that implements grocery class.
+                    </p> 
+                    <img src="./img/java-grocery.jpeg" alt="Fig.2 My java grocery class.">-->
+                </div>
 
-                <p>This project was about understanding the given business scenario for Humber College 
-                    and model Entities and relationships using Entity Relationship Diagram.</p>
-
-                <h3>Algorithms and Problem Solving - Object Oriented Programing</h3>
-                <button id="PS" onclick="showMore2()">More/Less</button>
-                <img id="PSPic" src="" alt="">
-        
-        
-                <p>In this project I used my knowledge in object orinted programing to build a program that implements grocery class.
-                </p>
-            <div>
-        
-            <!--<img src="./img/java-grocery.jpeg" alt="Fig.2 My java grocery class.">-->
-            </div>
-            </div>
+            </section>
         </main>
 
         <footer>
-        <!-- contact information is in the footer -->
-        <h9>Nikola Stojanovic</h9>&#32;&#124;&#32;
-        <a href="mailto:stojnik95@gmail.com">stojnik95@gmail.com</td>&#32;&#124;&#32;
-        <a href="tel: 647-774-4618"> 647-774-4618</td>
+            <!-- contact information is in the footer -->
+            <h9>Nikola Stojanovic</h9>&#32;&#124;&#32;
+            <a href="mailto:stojnik95@gmail.com">stojnik95@gmail.com</td>&#32;&#124;&#32;
+            <a href="tel: 647-774-4618"> 647-774-4618</td>
         </footer>  
+        
         <script>
 
-        var showMore = function() {
-        document.getElementById("DBPic").src= "./img/erd-model-med.jpeg"
-        document.getElementById("DBPic").alt= "LogicalModel"
-
-
-
-
-        
-    }
-    </script> 
+            var showMore = function() {
+                document.getElementById("show-more").src= "./img/erd-model-med.jpeg"
+                document.getElementById("show-more").alt= "LogicalModel"
+            }
+        </script> 
     </body>
 </html>
