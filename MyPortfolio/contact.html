@@ -135,7 +135,7 @@
                     information in the form provided below:
                 </p>
 
-                <form action="infolocal.html">
+                
                     <table>
                         <tr>
                             <td><label>First Name: </label></td>
@@ -161,7 +161,7 @@
                             <td><button value="reset"onclick="reset()">Reset</button></td>
                         </tr>
                     </table>
-                </form>
+               
             
             </div>
         </main>
@@ -183,9 +183,12 @@
                 var lastName = $("lname").value;
                 var email= $("email").value;
 
+                //let firstName = $("fname").value;
+                //let lastName= $("lname").value;
 
-                localStorage.setItem("fname", firstName);
-                localStorage.setItem("lname",lastName);
+
+                localStorage.setItem("f1", firstName);
+                localStorage.setItem("l1",lastName);
 
                 // check first name
 
@@ -226,6 +229,9 @@
                 if (firstName != "") {
                     $("fname").innerHTML=""
                 }
+
+                localStorage.removeItem("f1");
+                localStorage.removeItem("l1");
 
             }
 
